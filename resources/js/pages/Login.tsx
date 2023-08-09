@@ -74,11 +74,11 @@ export default function Login() {
                     <form className='flex flex-col gap-[20px]'>
                         <div className='flex flex-col gap-[10px]'>
                             <label className='text-[15px] font-[500] leading-[28px] text-[#222]'>Email Address</label>
-                            <input className='border-[#e9e9e9] h-[55px] rounded-[4px] border' />
+                            <input className='border-[#e9e9e9] h-[55px] rounded-[4px] border pl-[10px]' placeholder='Email' />
                         </div>
                         <div className='flex flex-col gap-[10px]'>
-                            <label className='text-[15px] font-[500] leading-[28px] text-[#222]'>Email Address</label>
-                            <input className='border-[#e9e9e9] h-[55px] rounded-[4px] border' />
+                            <label className='text-[15px] font-[500] leading-[28px] text-[#222]'>Password</label>
+                            <input className='border-[#e9e9e9] h-[55px] rounded-[4px] border pl-[10px]' type='password' placeholder='Password'/>
                         </div>
                         <div className='flex'>
                             <div className='flex w-[50%]'>
@@ -89,7 +89,7 @@ export default function Login() {
                                 <Link className='text-[16px] font-[400] leading-[28px] text-[#222]' to="/">Forgotten Password?</Link>
                             </div>
                         </div>
-                        <button className='font-sans text-[15px] leading-[28px] text-[#fff] font-[700] bg-[#5BBB7B] rounded-[4px] py-[12px] hover:bg-[#5bbb7bc9]'>Log In</button>
+                        <Link to="/user-dashboard"><button className='font-sans text-[15px] leading-[28px] text-[#fff] font-[700] bg-[#5BBB7B] rounded-[4px] py-[12px] hover:bg-[#5bbb7bc9]'>Log In</button></Link>
                     </form>
                 </div>
             </div>
