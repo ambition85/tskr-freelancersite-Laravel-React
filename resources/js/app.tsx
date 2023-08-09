@@ -20,6 +20,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Term from "./pages/Term";
 import CV from "./pages/CV"
+import DashBoard from "./pages/DashBoard";
 
 const container = document.getElementById('app');
 const root = createRoot(container!);
@@ -36,9 +37,10 @@ export default function App() {
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route path='/' element={<Crewing />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path='/' element={<Login />} />
+                    {/* <Route path="/login" element={<Login />} /> */}
                     <Route path="/register" element={<Register />} />
+                    <Route path="/user-dashboard" element={<DashBoard />} />
                     <Route path="/about_project" element={<About />} />
                     <Route path="/cv" element={
                         <PrivateRoute component={CV} />
